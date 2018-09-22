@@ -1,4 +1,4 @@
-import { Stroke, Grid } from "./classes"
+import { Grid } from "./classes"
 import { maximizeCanvas } from "./helpers"
 
 // Canvas and conext
@@ -26,7 +26,7 @@ function update(frame: number) {
 	grid.updateDots(frame)
 }
 
-function draw(frame: number) {
+function draw() {
 	context.fillStyle = "#161616"
 	context.fillRect(0, 0, canvas.width, canvas.height)
 
@@ -37,7 +37,7 @@ function animate() {
 	const frame = requestAnimationFrame(animate)
 
 	update(frame)
-	draw(frame)
+	draw()
 }
 
 if (context) init()
