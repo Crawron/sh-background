@@ -1,2 +1,5 @@
 export * from "./isOutsideOf"
 export * from "./maximizeCanvas"
+export * from "./addVectors"
+export * from "./vectorMagnitude"
+export * from "./vectorDistance"

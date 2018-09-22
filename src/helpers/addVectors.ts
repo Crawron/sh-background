@@ -6,3 +6,10 @@ export function addVectors(a: Vector2, b: Vector2) {
 		y: a.y + b.y
 	}
 }
+
+export function subVectors(a: Vector2, b: Vector2) {
+	return {
+		x: a.x - b.x,
+		y: a.y - b.y
+	}
+}

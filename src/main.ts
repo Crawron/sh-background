@@ -12,7 +12,7 @@ function init() {
 	maximizeCanvas(canvas)
 	document.body.appendChild(canvas)
 
-	grid = new Grid({ x: canvas.width, y: canvas.height }, { x: 20, y: 20 })
+	grid = new Grid({ x: canvas.width, y: canvas.height }, { x: 60, y: 30 })
 
 	window.addEventListener("resize", () => {
 		grid.screenSpace = { x: canvas.width, y: canvas.height }
@@ -23,7 +23,7 @@ function init() {
 }
 
 function update(frame: number) {
-	grid.updateDots()
+	grid.updateDots(frame)
 }
 
 function draw(frame: number) {
