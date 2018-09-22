@@ -1,4 +1,4 @@
 export function maximizeCanvas(canvas: HTMLCanvasElement) {
-	canvas.width = window.innerWidth
-	canvas.height = window.innerHeight
+	canvas.width = 1920
+	canvas.height = 1080
 }

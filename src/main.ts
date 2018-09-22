@@ -12,11 +12,11 @@ function init() {
 	maximizeCanvas(canvas)
 	document.body.appendChild(canvas)
 
-	grid = new Grid({ x: canvas.width, y: canvas.height }, { x: 60, y: 30 })
+	grid = new Grid({ x: canvas.width, y: canvas.height }, { x: 100, y: 40 })
 
 	window.addEventListener("resize", () => {
-		grid.screenSpace = { x: canvas.width, y: canvas.height }
 		maximizeCanvas(canvas)
+		grid.screenSpace = { x: canvas.width, y: canvas.height }
 	})
 
 	animate()
