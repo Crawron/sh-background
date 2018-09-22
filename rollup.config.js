@@ -19,8 +19,14 @@ export default {
 	external: ["ccapture.js"],
 	plugins: [
 		progress(), //
-		resolve(),
-		commonjs(),
+		resolve({
+			decko: true
+		}),
+		commonjs({
+			namedExports: {
+				decko: ["bind"]
+			}
+		}),
 		typescript({
 			clean: true,
 			rollupCommonJSResolveHack: true
